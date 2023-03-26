@@ -41,3 +41,8 @@ def shop(sum):
              else:
                  print("please enter right item.⚠️ ")
      return sum
+sum = shop(sum)
+print(myorders)
+print("your total bill is ",sum)
+print("Do you wanna add more item. press: yes otherwise no")
+opinion = input()
