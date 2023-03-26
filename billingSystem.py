@@ -26,3 +26,18 @@ def shop(sum):
          order = input("type what you wanna buy: ")
          if order =="E":
             break
+#          quantity
+#          discount
+         else:
+             if order in dict.keys():
+                 quantity = int(input("How much do you want: "))
+                #  d=int(input("discount given :"))
+                 oneItem = f"order: {order}, quantity: {quantity} "
+                 myorders.append(oneItem)
+                 sum=sum+quantity*(dict[order])
+                #  sum=sum-(sum*(d/100))
+#                  sum=sum+quantity*(dict[order])-(discount/100)*100
+
+             else:
+                 print("please enter right item.⚠️ ")
+     return sum
