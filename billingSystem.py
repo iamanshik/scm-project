@@ -44,3 +44,14 @@ print(myorders)
 print("your total bill is ",sum)
 print("Do you wanna add more item. press: yes otherwise no")
 opinion = input()
+
+if opinion=="yes":
+   sum = shop(sum)
+   print(myorders)
+
+#          mode of payment 
+else:
+    print("ThankYou for coming to our shop. Please handover money.")
+mess=input("press 1 for cash and 2 for card :")
+bill=sum
+
