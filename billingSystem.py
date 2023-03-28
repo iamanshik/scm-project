@@ -54,4 +54,21 @@ else:
     print("ThankYou for coming to our shop. Please handover money.")
 mess=input("press 1 for cash and 2 for card :")
 bill=sum
+if mess=='1':
+    sum=sum-(sum*(1/10))
+    print("your total bill is ",sum)
+    cash=int(input("your given amount :"))   
+    left_cash=cash-sum
+    print("cash to be return :",left_cash)
+    print("")
+    print(myorders)
+    print("your total bill is ",sum)
+    print("")
+    print("")
+    print("visit again 🙏")
 
+#          card
+elif mess=='2':
+    bill=sum-(sum*(1/10))
+    print('Your total bill is',bill)
+    exit()
